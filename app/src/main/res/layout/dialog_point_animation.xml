@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Vertical"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="125dp"
+        android:layout_height="125dp">
+
+        <pl.droidsonroids.gif.GifImageView
+            style="@style/MatchMatch"
+            android:src="@drawable/share_success" />
+
+        <TextView
+            android:id="@+id/tv_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/point_animation_text"
+            android:textSize="18dp" />
+    </FrameLayout>
+
+</LinearLayout>

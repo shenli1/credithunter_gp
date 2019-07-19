@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/sub_actionbar" />
+
+    <WebView
+        android:id="@+id/webview_common_web"
+        style="@style/MatchMatch"
+        android:layout_marginTop="@dimen/action_bar_height" />
+
+    <!--share button-->
+    <LinearLayout
+        android:id="@+id/ll_feeds_share"
+        style="@style/Clickable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/shape_feeds_share_button"
+        android:paddingBottom="11dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="11dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/feeds_share_button"
+            android:textAlignment="center"
+            android:textColor="@color/text_white" />
+    </LinearLayout>
+</FrameLayout>

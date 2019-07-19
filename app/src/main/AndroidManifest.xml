@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.id.cash">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!--<uses-permission android:name="android.permission.READ_SMS" />-->
+    <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!--buggly-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    <!-- <uses-permission android:name="android.permission.READ_CONTACTS" /> -->
+    <!-- requried by talking data -->
+    <!-- <uses-permission android:name="android.permission.GET_TASKS"  /> -->
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.app.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.app.MainTabActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.app.PrivacyPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.webview.CommonWebActivity"
+            android:parentActivityName=".activity.app.MainTabActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.feeds.FeedsWebActivity"
+            android:parentActivityName=".activity.app.MainTabActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" />
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitActivity"
+            android:parentActivityName=".activity.app.MainTabActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".module.starwin.sns.FBShareActivity"
+            android:label="@string/title_activity_fb_share"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentActivity" />
+        <activity
+            android:name=".activity.product.cashloan.CashLoanDetailActivity"
+            android:parentActivityName=".activity.app.MainTabActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize" />
+        <activity
+            android:name=".activity.product.cashloan.SearchMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.product.cashloan.FilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.BonusPointListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.InviteResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.InviteShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.app.CloseAppActivity"
+            android:clearTaskOnLaunch="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.app.AboutUsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.user.WithdrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.user.WithdrawSubmitResultActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- facebook accountkit -->
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+
+        <receiver android:name="com.appsflyer.SingleInstallBroadcastReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".service.notification.NotificationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="PUSH_NOTIFICATION_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- FCM -->
+        <service android:name=".service.notification.SWFirebaseMessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.notification.SWFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+    </application>
+
+</manifest>

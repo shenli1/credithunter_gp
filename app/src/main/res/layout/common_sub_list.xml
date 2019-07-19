@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--a layout that supports network error/no data & potential future pagination-->
+<com.id.cash.widget.NetworkLoadingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_list_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/layout_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadMore="false"
+        app:srlEnableLoadMoreWhenContentNotFull="false"
+        app:srlHeaderHeight="@dimen/refresh_header_height">
+
+        <com.id.cash.widget.RefreshHeaderLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:layout_srlBackgroundColor="@android:color/transparent"
+            app:layout_srlSpinnerStyle="Scale" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</com.id.cash.widget.NetworkLoadingLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:orientation="vertical">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/layout_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadMore="false"
+        app:srlEnableLoadMoreWhenContentNotFull="false"
+        app:srlEnableRefresh="false"
+        app:srlHeaderHeight="@dimen/refresh_header_height">
+
+        <com.id.cash.widget.RefreshHeaderLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:layout_srlBackgroundColor="@android:color/transparent"
+            app:layout_srlSpinnerStyle="Scale" />
+
+        <com.id.cash.widget.ObservableScrollView
+            android:id="@+id/scrollview_cashloan_detail"
+            style="@style/MatchMatch">
+            <!--outer most wrapper-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--top image & invite button-->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/invite_result_bg" />
+
+                    <TextView
+                        android:id="@+id/tv_invite"
+                        style="@style/Clickable"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="40dp"
+                        android:background="@drawable/shape_invite_button"
+                        android:maxLines="1"
+                        android:paddingBottom="11dp"
+                        android:paddingTop="11dp"
+                        android:text="@string/invite_button"
+                        android:textAlignment="center"
+                        android:textColor="@color/invite_button_bg"
+                        android:textSize="16sp" />
+                </FrameLayout>
+
+                <!--invite result summary-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/horizontal_padding"
+                    android:layout_marginRight="@dimen/horizontal_padding"
+                    android:background="@color/white_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="12dp"
+                    android:paddingTop="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:maxLines="1"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:text="@string/invite_summary_title"
+                        android:textColor="@color/dark_text1"
+                        android:textSize="14sp" />
+
+                    <!--total heads, total bonus point-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+                        <!--icon-->
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_invite_summary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/invite_summary_1"
+                            android:textColor="@color/invite_summary"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_invite_person_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/text_highlight1"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/invite_summary_2"
+                            android:textColor="@color/invite_summary"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_invite_bonuspoint_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/text_highlight1"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/invite_summary_3"
+                            android:textColor="@color/invite_summary"
+                            android:textSize="10dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--referral list-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_invite_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/horizontal_padding"
+                    android:layout_marginRight="@dimen/horizontal_padding"
+                    android:paddingBottom="20dp"
+                    />
+
+            </LinearLayout>
+        </com.id.cash.widget.ObservableScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

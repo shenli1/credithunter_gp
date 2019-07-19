@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/horizontal_padding"
+    android:paddingRight="@dimen/horizontal_padding"
+    android:paddingTop="140dp">
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/common_network_error" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/can_not_load" />
+
+    <TextView
+        android:id="@+id/tv_network_error_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_internet_connection" />
+
+    <TextView
+        android:id="@+id/tv_network_reload"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/shape_network_reload_button"
+        android:text="@string/network_reload"
+        android:textColor="@color/text_white"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        />
+
+</LinearLayout>

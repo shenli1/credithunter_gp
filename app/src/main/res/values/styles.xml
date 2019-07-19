@@ -1,0 +1,236 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="check_box">
+        <item name="allowedBackground">@drawable/selector_check_box</item>
+        <item name="ccbNotAllowedBackground">@drawable/rec_unchecked_disabled</item>
+    </style>
+
+    <style name="text_toolbar">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="default_button_text">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="default_button_style" parent="default_button_text"></style>
+
+    <style name="theme_dialog_button_style" parent="default_button_style">
+        <item name="android:background">@drawable/selector_theme_button</item>
+    </style>
+
+    <style name="gray_dialog_button_style" parent="default_button_style">
+        <item name="background">@drawable/selector_gray_button</item>
+    </style>
+
+    <style name="PopupDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_out</item>
+    </style>
+
+    <style name="PopupDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="PopupDialog.BottomIn">
+        <item name="android:windowAnimationStyle">@style/PopupDialogAnimation</item>
+    </style>
+
+    <declare-styleable name="LocalTextView">
+        <attr name="tActionName" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="LocalButton">
+        <attr name="bActionName" format="string" />
+        <attr name="restrictClick" format="boolean" />
+    </declare-styleable>
+
+    <style name="MatchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchMatch.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MatchMatch.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MatchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchWrap.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MatchWrap.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="WrapWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WrapWrap.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="WrapWrap.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="SectionTitle" parent="MatchWrap">
+        <item name="android:paddingLeft">@dimen/horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/horizontal_padding</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/dark_text1</item>
+        <item name="android:background">@color/white_bg</item>
+    </style>
+
+    <style name="ProgressDialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Animation" />
+
+    <style name="Animation.ActivityFadeAnimation" parent="android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="TransparentActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.ActivityFadeAnimation</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="SlidingTabBar">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Cell">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/horizontal_padding</item>
+        <item name="android:background">@color/white_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/cell_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="Cell.Spaced">
+        <item name="android:layout_marginBottom">@dimen/vertical_space_margin</item>
+    </style>
+
+    <style name="CellIcon">
+        <item name="android:layout_width">21dp</item>
+        <item name="android:layout_height">21dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+    </style>
+
+    <style name="CellTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/dark_text1</item>
+    </style>
+
+    <style name="ActionBarDefault">
+        <item name="android:layout_height">@dimen/action_bar_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/shape_statusbar</item>
+    </style>
+
+    <style name="ActionBarImageButton">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="ActionBarImageButton.Toolbar">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="TagListView">
+        <item name="tagTextSize">12dp</item>
+        <item name="tagTextColor">@color/dark_text2</item>
+        <item name="tagPaddingLeft">10dp</item>
+        <item name="tagPaddingTop">10dp</item>
+        <item name="tagPaddingRight">10dp</item>
+        <item name="tagPaddingBottom">10dp</item>
+        <item name="lineSpacing">10dp</item>
+        <item name="tagSpacing">10dp</item>
+        <item name="tagBackground">@drawable/shape_search_tag</item>
+    </style>
+
+    <style name="SearchHistorySectionHeader">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="WithDrawCommonMargin">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="WithDrawEdit">
+        <item name="android:textColor">@color/dark_text1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+    <style name="Clickable">
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+</resources>

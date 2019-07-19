@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    >
+    <com.id.cash.widget.NetworkLoadingLayout
+        android:id="@+id/layout_networking_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/main_tab_height"
+        >
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/layout_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlEnableLoadMore="false"
+            app:srlEnableLoadMoreWhenContentNotFull="false"
+            app:srlHeaderHeight="@dimen/refresh_header_height">
+
+            <com.id.cash.widget.RefreshHeaderLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_srlBackgroundColor="@android:color/transparent"
+                app:layout_srlSpinnerStyle="Scale" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_bonuspoint_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </com.id.cash.widget.NetworkLoadingLayout>
+
+</LinearLayout>

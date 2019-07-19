@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Clickable"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginTop="@dimen/vertical_space_margin"
+    android:background="@drawable/shape_bonuspoint_task"
+    android:orientation="vertical"
+    android:paddingLeft="9dp"
+    android:paddingRight="9dp"
+    >
+
+    <!--stamp-->
+    <ImageView
+        android:id="@+id/iv_bonuspoint_task_stamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="55dp"
+        android:src="@drawable/bonuspoint_task_stamp" />
+
+    <!--arrow-->
+    <ImageView
+        android:id="@+id/iv_cell_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:src="@drawable/ic_cell_arrow" />
+
+    <!--foreground-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginRight="8dp">
+        <!--left icon-->
+        <ImageView
+            android:id="@+id/iv_bonuspoint_task_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="9dp"
+            android:src="@drawable/ic_bonuspoint_task_sign" />
+
+        <!--mid info-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_bonuspoint_task_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/dark_text1"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_bonuspoint_task_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/text_hint"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <!--right: point type icon-->
+        <ImageView
+            android:id="@+id/iv_bonuspoint_task_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bonuspoint_task_sign" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,179 @@
+<resources>
+    <!--privacy policy activity-->
+    <string name="read_policy_fully">*Mohon baca sepenuhnya kebijakan ini</string>
+    <string name="i_agree_this_policy">Saya setuju dengan kebijakan ini</string>
+    <string name="button_agree">Setuju</string>
+    <string name="button_reject">Tolak</string>
+    <string name="privacy_policy">Kebijakan Privasi</string>
+    <string name="user_policy">Ketentuan Layanan</string>
+    <string name="check_the_checkbox">Setujui kebijakan tersebut dengan mencentang kotak centang</string>
+    <string name="read_the_document_to_proceed">Silahkan baca seluruh Kebijakan untuk tahap selanjutnya</string>
+
+
+    <!--upgrade dialog-->
+    <string name="upgrade_dialog_title">Upgrade Software</string>
+    <string name="upgrade_dialog_please_upgrade">Silakan unduh dan perbarui versi terbaru</string>
+    <string name="upgrade_dialog_reject">Tolak</string>
+    <!--todo translate exit app-->
+    <string name="upgrade_dialog_exit">Exit</string>
+    <string name="upgrade_dialog_download">Unduh</string>
+    <!--todo translate-->
+    <string name="upgrade_dialog_enable_download_manager">DownloadManager is disabled. Please enable it.</string>
+
+    <string name="point_faq">Poin FAQ</string>
+    <string name="title_activity_fb_share">ShareActivity</string>
+
+    <string name="default_loading_message">Konten sedang dimuat, harap tunggu dengan sabar ...</string>
+
+    <!--detail page-->
+    <string name="payment">Pembayaran</string>
+    <string name="loan">Pinjaman</string>
+    <string name="loan_pass_rate">Lulus</string>
+    <string name="loan_score">Penagihan</string>
+    <string name="loan_fee_interest">Bunga</string>
+    <string name="loan_introduction">Pengenalan terperinci</string>
+    <string name="currency_placeholder">Rp —</string>
+    <string name="loan_apply_procedure_title">Proses Peminjaman</string>
+    <string name="loan_audit_procedure_title">Informasi Audit</string>
+    <string name="loan_tab_detail">Detail</string>
+    <string name="loan_tab_flow">Flow</string>
+    <string name="go_to_store">Unduh Aplikasi</string>
+
+    <!--share -->
+    <string name="share_not_allowed">Share not allowed</string>
+    <string name="share_wrong_parameter">Share wrong parameter</string>
+
+    <!--FCM notification-->
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="default_notification_channel_name">Informasi</string>
+    <string name="default_notification_channel_description">updates</string>
+
+    <!--account drawer-->
+    <string name="please_login">Silahkan masuk</string>
+    <string name="bonuspoint_detail">Detail Bonus</string>
+    <string name="service_agreement">Ketentuan Layanan</string>
+    <string name="about_us">Tentang</string>
+    <string name="logout">Logout</string>
+
+    <!--search-->
+    <string name="search_hotwords">Pencarian Panas</string>
+    <string name="search_history">Riwayat Pencarian</string>
+
+    <!--network loading layout-->
+    <string name="no_data">Tidak Ada Apa-apa Di Sini...</string>
+    <string name="can_not_load">Tidak Bisa Memuat</string>
+    <string name="check_internet_connection">Mohon Periksa Koneksi Internet Anda</string>
+    <string name="network_reload">Coba Sekali Lagi</string>
+
+    <!--search result-->
+    <string name="search_max_quota_format">Jumlah mrsimum Rp %s</string>
+    <string name="search_interest_format">Bunga>=%s/Hari</string>
+    <string name="search_process_time_format">Proses %s</string>
+
+    <!--bonus point list-->
+    <string name="bonuspoint_list_title">Detail Bonus</string>
+
+    <!--invite result-->
+    <string name="invite_button">Angkat Sekarang</string>
+    <string name="invite_summary_title">Catatan undangan</string>
+    <string name="invite_summary_1">Berhasil diundang\u0020</string>
+    <string name="invite_summary_2">\u0020orang, Dapatkan\u0020</string>
+    <string name="invite_summary_3">\u0020bonus</string>
+    <string name="invite_anonymous">seorang pengguna</string>
+
+    <!--invite share-->
+    <string name="invite_share_title">Bagikan Ke Teman</string>
+    <string name="invite_share_whatsapp">WhatsApp</string>
+    <string name="invite_share_fb">Facebook</string>
+    <string name="invite_share_more">Lainnya</string>
+    <string name="invite_share_whatsapp_fail">Gagal memuat, tidak dapat memulai WhatsApp, pastikan Whatsapp telah terpasang</string>
+    <string name="invite_share_share_other_title">Berbagi</string>
+
+    <!--withdraw-->
+    <string name="withdraw_title">Tarik Uang</string>
+    <string name="withdraw_amount">Jumlah Yang Bisa Ditarik</string>
+    <string name="withdraw_count">RP. </string>
+    <string name="withdraw_user_name_title">Nama Lengkap</string>
+    <string name="withdraw_bank_name_title">Nama Bank</string>
+    <string name="withdraw_user_name_hint">Silahkan isi nama lengkap Anda</string>
+    <string name="withdraw_bank_name_hint">Silahkan pilih Bank Anda</string>
+    <string name="withdraw_bankcard_no_title">Nomor kartu bank Anda</string>
+    <string name="withdraw_bankcard_no_hint">Silahkan isi nomor kartu Bank Anda</string>
+    <string name="withdraw_introduction">Demi memastikan jumlah yang ditarik tepat masuk dalam akun Anda, silahkan isi dengan benar informarsi Bank Anda. Setelah permohonan penarikan dan sebelum uang tersebut masuk dalam rekening Bank Anda, bonus akan dibekukan, jika sudah masuk, bonus segera terpotong.</string>
+    <string name="withdraw_button">Segera Tarik Uang</string>
+    <string name="withdraw_confirm_format" formatted="false">Apakah Anda yakin untuk menarik (%s) ke rekening bank (%s) dengan nomor kartu (%s)? Setelah konfirmasi, informasi yang ada tidak dapat dimodifikasi, jumlah uang masuk ke dalam rekening bank ini.</string>
+
+    <!--withdraw confirm-->
+    <string name="withdraw_confirm_title">Konfirmasi Penarikan</string>
+
+    <!--withdraw result-->
+    <string name="withdraw_result_title">Tarik Uang</string>
+
+    <!--permission dialog-->
+    <string name="permission_dialog_title">PEMBERITAHUAN</string>
+    <string name="permission_dialog_content_format">%s mengharuskan Anda mengotorisasi kami untuk menggunakan fitur perangkat Anda berikut ini:\n1. Daftar aplikasi\n2. SMS\n%s akan menggunakan hak istimewa ini untuk memberi Anda layanan bonus</string>
+
+    <!--home loan cell-->
+    <string name="loan_cell_show_detail">Ajukan</string>
+    <string name="loan_cell_quota">Jumlah Maksimum</string>
+    <string name="loan_cell_go">GO</string>
+
+    <!--main-->
+    <string name="main_action_bar_title">@string/app_name</string>
+    <string name="main_tab_home">Beranda</string>
+    <string name="main_tab_feeds">Informasi</string>
+    <string name="main_tab_bonus_point">Uang Saya</string>
+
+    <!--bonuspoint-->
+    <string name="bonuspoint_title">Uang Saya</string>
+    <string name="bonuspoint_guest_warning">Bonus yang berada di perangkat saat ini tidak akan kembali ke akun yang semula, namun akan diberikan kepada pengguna baru, segera sign-in!</string>
+    <string name="bonuspoint_placeholder">Rp --</string>
+    <string name="bonuspoint_desc_row1">Jika bonus capai Rp 100.000</string>
+    <string name="bonuspoint_desc_row2">Anda dapat </string>
+    <string name="bonuspoint_withdraw"><u>menariknya segera</u></string>
+
+    <!--每日登录奖励您80卢比-->
+    <string name="bonuspoint_title_sign">Masuk Per Hari Dapat Rp 80</string>
+    <!--只要您坚持每日登录，我们将奖励您80卢比-->
+    <string name="bonuspoint_desc_sign">Hanya Butuh Anda Masuk Setiap Harinya Dapatkan Rp 80</string>
+
+    <!--分享成功奖励您400卢比-->
+    <string name="bonuspoint_title_share">Berhasil Bagikan Dapat Rp 400</string>
+    <!--每周您首次分享成功后，我们将奖励您400卢比-->
+    <string name="bonuspoint_desc_share">Pertama Kali Berhasil‘Bagikan’ Gratis Hadiah Rp 400</string>
+
+    <!--邀请朋友获得800卢比-->
+    <string name="bonuspoint_title_invite">Undang Teman Dapat Rp 800</string>
+    <!--您每邀请一位朋友，您就可以获得800卢比，您可以无限邀请朋友-->
+    <string name="bonuspoint_desc_invite">Setiap Mengundang Teman Dapatkan Rp 800, Berlaku Kelipatan</string>
+
+    <!--贷款成功送你奖励-->
+    <string name="bonuspoint_title_borrowed">Berhasil Pinjam Gratis Rupiah</string>
+    <!--当您首次贷款成功后，我们将赠送您2000卢比-->
+    <string name="bonuspoint_desc_borrowed">Berhasil Pertama Kali Melakukan Pinjaman Dapatkan Rp 2000</string>
+
+    <!--注册成功奖励您500卢比-->
+    <string name="bonuspoint_title_registered">Berhasil Daftar Dapat Rp 500</string>
+    <!--您在任意平台首次注册成功后，我们将赠送您500卢比-->
+    <string name="bonuspoint_desc_registered">Anda Berhasil Daftar Di Platform Mananpun Dapatkan Gratis Rp 500</string>
+
+    <!--feeds-->
+    <string name="feeds_title">Informasi</string>
+    <string name="feeds_share_button">Tekan Bagikan Dapat Rp400</string>
+
+    <!--cashloan cell-->
+    <string name="cashloan_cell_interest_format">≥%s/hari</string>
+    <string name="cashloan_cell_pass_rate_format">ACC %s%% Tercepat</string>
+
+    <!--common-->
+    <string name="common_money_with_unit_format">Rp %s</string>
+
+    <!--about us details-->
+    <string name="about_us_detail_facebook">Facebook: @rupiahpinjam</string>
+    <string name="about_us_detail_contact">Kontak: PemburuKredit Service</string>
+    <string name="about_us_detail_email">E-mail: pemburuKredit.service@gmail.com</string>
+    <string name="about_us_detail_telephone">Telepon: 12345678</string>
+    <string name="about_us_detail_addr">Alamat: Jl. Tlk. Betung I No.29, Kebon Melati, Tanah Abang, Central Jakarta City, Jakarta 10230</string>
+
+    <string name="loan_cell_long_term">jangka panjang</string>
+</resources>

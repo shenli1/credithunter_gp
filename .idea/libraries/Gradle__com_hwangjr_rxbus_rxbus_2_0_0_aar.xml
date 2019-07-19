@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.hwangjr.rxbus:rxbus:2.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rxbus-2.0.0.aar/6e385b1127153d8c63298eef5936791d/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rxbus-2.0.0.aar/6e385b1127153d8c63298eef5936791d/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hwangjr.rxbus/rxbus/2.0.0/9e4039cc9cc17ed00bf8e720ee4ce610cc9a4f50/rxbus-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

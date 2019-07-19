@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:orientation="vertical">
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/banner_cashloan_list"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        app:canLoop="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_marquee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_marquee" />
+
+        <com.id.cash.widget.MarqueeView
+            android:id="@+id/mqv_cashloan"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:mvAnimDuration="900"
+            app:mvInterval="5000"
+            app:mvSingleLine="true"
+            app:mvTextColor="@color/dark_text1"
+            app:mvTextSize="14sp" />
+
+    </LinearLayout>
+
+    <!--the relative layout wrapper is to workaround a problem-->
+    <!--that when the banner is gone, the whole header does not match_parent horizontally-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_cashloan_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:overScrollMode="never"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+    </RelativeLayout>
+</LinearLayout>

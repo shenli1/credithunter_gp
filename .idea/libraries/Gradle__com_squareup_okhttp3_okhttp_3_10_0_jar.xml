@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: com.squareup.okhttp3:okhttp:3.10.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

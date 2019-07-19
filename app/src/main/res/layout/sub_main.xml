@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height">
+
+        <include layout="@layout/actionbar_home" />
+
+        <include layout="@layout/actionbar_bonuspoint" />
+
+        <include layout="@layout/actionbar_feeds" />
+
+    </FrameLayout>
+
+    <!--<android.support.design.widget.AppBarLayout-->
+    <!--android:id="@+id/app_bar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/action_bar_height"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--app:elevation="0dp">-->
+
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/toolbar_main"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/action_bar_height"-->
+    <!--android:background="@drawable/shape_statusbar"-->
+    <!--app:contentInsetLeft="0dp"-->
+    <!--app:layout_scrollFlags="enterAlways|scroll">-->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/action_bar_height"
+        android:background="@color/white" />
+
+    <!--linear layout for top divider-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_tab_height"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/main_tab_divider" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/main_tab_bg"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="fixed" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

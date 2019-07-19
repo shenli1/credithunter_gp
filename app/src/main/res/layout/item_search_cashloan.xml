@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Clickable"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/horizontal_padding"
+    android:paddingRight="@dimen/horizontal_padding"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp">
+        <!--loan icon-->
+        <ImageView
+            android:id="@+id/iv_search_loan_icon"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_default_icon" />
+
+        <!--loan name, quota, interest rate, process time-->
+        <LinearLayout style="@style/MatchWrap.Vertical">
+
+            <!--loan name-->
+            <TextView
+                android:id="@+id/tv_search_loan_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:maxLines="1"
+                android:maxWidth="140dp"
+                android:text=""
+                android:textColor="@color/dark_text1"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_search_max_quota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:maxLines="1"
+                android:textColor="@color/dark_text4"
+                android:textSize="13sp" />
+
+            <!--interest and process time-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_pass_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_text4"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_text4"
+                    android:textSize="13sp"
+                    android:text="@string/loan_cell_long_term"
+                    />
+
+                <!--do not remove, required by code-->
+                <TextView
+                    android:id="@+id/tv_search_interest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_text4"
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_search_process_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:maxLines="1"
+                    android:textColor="@color/dark_text4"
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--score tag-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:background="@drawable/loan_detail_rank"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_search_score_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/text_white"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</FrameLayout>

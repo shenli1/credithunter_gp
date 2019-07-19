@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_splash_copyright_font_size">11sp</dimen>
+
+    <dimen name="nav_button_width">50dp</dimen>
+    <dimen name="action_bar_height">50dp</dimen>
+    <dimen name="refresh_header_height">100dp</dimen>
+
+    <dimen name="main_tab_height">48dp</dimen>
+
+    <dimen name="horizontal_padding">16dp</dimen>
+    <dimen name="vertical_space_margin">9dp</dimen>
+    <dimen name="cell_height">48dp</dimen>
+
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp14">14dp</dimen>
+    <dimen name="dp20">20dp</dimen>
+    <dimen name="dp30">30dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+    <dimen name="dp45">45dp</dimen>
+    <dimen name="dp48">48dp</dimen>
+    <dimen name="dp50">50dp</dimen>
+
+</resources>

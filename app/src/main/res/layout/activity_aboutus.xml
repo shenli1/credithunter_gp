@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/sub_actionbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/MatchMatch"
+        android:background="@color/page_background">
+
+        <LinearLayout
+            style="@style/MatchWrap.Vertical"
+            android:layout_marginTop="15dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                style="@style/MatchWrap.Vertical"
+                android:background="@color/page_background">
+
+                <ImageView
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:src="@drawable/ic_aboutus_logo" />
+
+                <TextView
+                    android:id="@+id/tv_app_version"
+                    style="@style/WrapWrap"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="45dp"
+                    android:textColor="@color/dark_text2"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MatchWrap.Vertical"
+                android:paddingLeft="@dimen/horizontal_padding"
+                android:paddingRight="@dimen/horizontal_padding">
+
+                <TextView
+                    style="@style/MatchWrap"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/about_us_detail_facebook"
+                    android:textColor="@color/dark_text1"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/divider"
+                    android:visibility="visible" />
+
+                <TextView
+                    style="@style/MatchWrap"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/about_us_detail_contact"
+                    android:textColor="@color/dark_text1"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/divider"
+                    android:visibility="visible" />
+
+                <TextView
+                    style="@style/MatchWrap"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/about_us_detail_email"
+                    android:textColor="@color/dark_text1"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/divider"
+                    android:visibility="visible" />
+
+                <TextView
+                    style="@style/MatchWrap"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="@string/about_us_detail_telephone"
+                    android:textColor="@color/dark_text1"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/divider" />
+
+                <TextView
+                    style="@style/MatchWrap"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:maxLines="3"
+                    android:text="@string/about_us_detail_addr"
+                    android:textColor="@color/dark_text1"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

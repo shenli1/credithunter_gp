@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splash_app_name_text">#FF696969</color>
+
+    <color name="primary_dark">#FFFFFFFF</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="toolbar_background">#ff952e</color>
+
+    <color name="white_bg">#FFFFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--used by common_progress, i.e. ProgressDialog-->
+    <color name="loading_transparent_bg">#ccffffff</color>
+
+    <color name="background_1">#f3f3f3</color>
+    <color name="page_background">@color/background_1</color>
+
+    <color name="text_hint">#696969</color>
+    <color name="text_light">#bebebe</color>
+    <color name="text_highlight">#40d2a4</color>
+    <color name="text_highlight1">#ea3e31</color>
+    <color name="text_highlight2">#fd4d20</color>
+    <color name="text_white">#ffffff</color>
+
+    <color name="text_theme_title">#4c5253</color>
+
+    <!--different gray level of text-->
+    <color name="dark_text1">#353535</color>
+    <color name="dark_text2">#424242</color>
+    <color name="dark_text3">#454545</color>
+    <color name="dark_text4">#696969</color>
+    <color name="dark_text5">#d3d3d3</color>
+
+    <color name="divider">#eeeeee</color>
+
+    <color name="header_start">#f87924</color>
+    <color name="header_end">#f89c14</color>
+
+    <color name="theme_button_bg">#fd8e11</color>
+    <color name="button_start">#f87924</color>
+    <color name="button_end">#f89c14</color>
+    <color name="button_reject_start">#cccccc</color>
+    <color name="button_reject_end">#cccccc</color>
+    <color name="button_click_start">#ff952e</color>
+    <color name="button_click_end">#ff952e</color>
+    <color name="button_title_disabled">#dddddd</color>
+
+    <color name="theme_gradiant_start">#f89c14</color>
+    <color name="theme_gradiant_end">#f87924</color>
+
+    <color name="apply_button_start">#ea3e31</color>
+    <color name="apply_button_end">#ea3e31</color>
+
+    <color name="ring_bg">#e0e0e0</color>
+    <color name="ring_color1">#fdb429</color>
+    <color name="ring_color2">#578ad9</color>
+
+
+    <!--flow step cell-->
+    <color name="step_divider">#ff952e</color>
+
+    <!--loan detail-->
+    <color name="theme_hint_light">#ea3e31</color>
+    <color name="hint_red">#ff0000</color>
+
+    <!--invite result-->
+    <color name="invite_button_bg">#ea3e31</color>
+    <color name="invite_summary">#4d4d4d</color>
+
+    <!--invite share-->
+    <color name="button_text_highlight">#ea3e31</color>
+
+    <!--market loan cell-->
+    <color name="loan_cell_show_detail_bg">#fd8e11</color>
+    <color name="loan_cell_intro_text">#a4a4a4</color>
+
+    <!--feeds cell-->
+    <color name="feeds_cell_intro_text">#a4a4a4</color>
+
+    <!--home tab-->
+    <color name="main_actionbar_search_bg">#36ffffff</color>
+    <color name="main_tab_divider">#bbbbbb</color>
+    <color name="main_tab_bg">#faffffff</color>
+    <color name="main_tab_title_selected">#ea3e31</color>
+    <color name="main_tab_title">#bbbbbb</color>
+
+    <!--bonuspoint main-->
+    <color name="bonuspoint_warning_bg">#fff4b8</color>
+    <color name="bonuspoint_warning_text">#ff952e</color>
+
+    <color name="theme_hint_light1">#f87924</color>
+    <color name="point_animation_text">#ff952e</color>
+
+    <color name="search_text_bg">#54FFFFFF</color>
+    <color name="search_tag_bg">#f5f5f5</color>
+    <color name="with_draw_introduction">#ff952e</color>
+</resources>

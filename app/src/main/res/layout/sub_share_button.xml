@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="258dp"
+    android:layout_height="50dp"
+    android:background="@drawable/selector_invite_share_button_bg"
+    android:gravity="center_vertical"
+    >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/iv_share_button_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="79dp"
+            android:layout_marginRight="23dp"
+            android:src="@drawable/ic_share_whatsapp_0" />
+
+        <TextView
+            android:id="@+id/tv_share_button_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/invite_share_whatsapp"
+            android:textColor="@color/text_white" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_share_button_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="18dp"
+        android:visibility="invisible"
+        android:src="@drawable/ic_invite_share_select"
+        />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_search_history"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bg"
+    >
+
+    <!--scroll root-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/horizontal_padding"
+        >
+
+        <!--hot words-->
+        <TextView
+            style="@style/SearchHistorySectionHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_hotwords" />
+
+        <com.id.cash.widget.TagListView
+            android:id="@+id/tlv_search_hotword"
+            style="@style/TagListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/horizontal_padding"
+            />
+
+        <!--history: title & delete all-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                style="@style/SearchHistorySectionHeader"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/search_history" />
+
+            <!--padding right set here for increasing button size-->
+            <ImageView
+                android:id="@+id/iv_search_clear_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search_clear"
+                android:paddingTop="16dp"
+                android:paddingRight="@dimen/horizontal_padding"
+                android:paddingLeft="30dp"
+                />
+        </LinearLayout>
+
+        <com.id.cash.widget.TagListView
+            android:id="@+id/tlv_search_history"
+            style="@style/TagListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

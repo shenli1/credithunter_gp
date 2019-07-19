@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@color/page_background"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_scrollFlags="enterAlways|scroll">
+        <!--outer scroll wrapper-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--user header-->
+            <LinearLayout
+                android:id="@+id/ll_user_header"
+                style="@style/Clickable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/vertical_space_margin"
+                android:background="@color/white_bg"
+                android:gravity="center_vertical"
+                android:minHeight="78dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/horizontal_padding"
+                android:paddingRight="@dimen/horizontal_padding">
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginRight="17dp"
+                    android:src="@drawable/ic_user_default" />
+
+                <TextView
+                    android:id="@+id/tv_drawer_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/please_login"
+                    android:textColor="@color/theme_hint_light1"
+                    android:textSize="@dimen/dp14" />
+            </LinearLayout>
+
+            <!--bonuspoint detail-->
+            <LinearLayout
+                android:id="@+id/ll_user_point_detail"
+                style="@style/Cell">
+
+                <ImageView
+                    style="@style/CellIcon"
+                    android:src="@drawable/ic_user_bonuspoint" />
+
+                <TextView
+                    style="@style/CellTitle"
+                    android:text="@string/bonuspoint_detail" />
+            </LinearLayout>
+            <!--service agreement-->
+            <LinearLayout
+                android:id="@+id/ll_user_service_agreement"
+                android:visibility="gone"
+                style="@style/Cell">
+
+                <ImageView
+                    style="@style/CellIcon"
+                    android:src="@drawable/ic_user_info" />
+
+                <TextView
+                    style="@style/CellTitle"
+                    android:text="@string/service_agreement" />
+            </LinearLayout>
+            <!--privacy policy-->
+            <LinearLayout
+                android:id="@+id/ll_user_privacy_policy"
+                style="@style/Cell">
+
+                <ImageView
+                    style="@style/CellIcon"
+                    android:src="@drawable/ic_user_privacy" />
+
+                <TextView
+                    style="@style/CellTitle"
+                    android:text="@string/privacy_policy" />
+            </LinearLayout>
+
+            <!--about us-->
+            <LinearLayout
+                android:id="@+id/ll_user_about_aboutus"
+                style="@style/Cell"
+                android:layout_marginBottom="@dimen/vertical_space_margin">
+
+                <ImageView
+                    style="@style/CellIcon"
+                    android:src="@drawable/ic_user_about_us" />
+
+                <TextView
+                    style="@style/CellTitle"
+                    android:text="@string/about_us" />
+            </LinearLayout>
+
+
+            <!--logout-->
+            <LinearLayout
+                android:id="@+id/ll_user_logout"
+                style="@style/Cell"
+                android:visibility="invisible">
+
+                <ImageView
+                    style="@style/CellIcon"
+                    android:src="@drawable/ic_user_logout" />
+
+                <TextView
+                    style="@style/CellTitle"
+                    android:text="@string/logout" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:lineSpacingExtra="3dp"
+                android:paddingTop="80dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/text_light"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

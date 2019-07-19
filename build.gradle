@@ -1,0 +1,51 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+    }
+    dependencies {
+
+        classpath 'com.android.tools.build:gradle:3.2.0'
+        // The Google Services Gradle Plugin
+//        classpath 'com.google.gms:google-services:4.1.0'
+//        classpath 'io.fabric.tools:gradle:1.25.4'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        google()
+        jcenter()
+        maven {
+            url 'https://maven.google.com/'
+        }
+    }
+}
+
+ext {
+    compileSdkVersion = 26
+    minSdkVersion = 16
+    targetSdkVersion = 26
+    buildToolsVersion = '27.0.2'
+    supportLibraryVersion = '27.1.1'
+    rxandroidVersion = '2.0.2'
+    rxjavaVersion = '2.1.2'
+    rxlifecycleVersion = '2.2.1'
+    jacksonVersion = '2.9.0'
+    glideVersion = '4.7.1'
+    fbSDKVersion = '4.32.0'
+    retrofitVersion = '2.4.0'
+    okhttpVersion = '3.4.1'
+    stethoVersion = '1.5.0'
+    firebaseVersion = '15.0.2'
+    gmsVersion = '15.0.0'
+    leakCanaryVersion = '1.5.4'
+}

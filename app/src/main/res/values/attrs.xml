@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RingChartView">
+        <attr name="color1" format="reference|color" />
+        <attr name="color2" format="reference|color" />
+        <attr name="bg_color" format="reference|color" />
+        <attr name="stroke_width" format="dimension|fraction" />
+    </declare-styleable>
+
+    <declare-styleable name="SlidingTabBar">
+        <attr name="paddingTab" format="reference|dimension"/>
+        <attr name="underlineColor" format="reference|color"/>
+        <attr name="indicatorColor" format="reference|color"/>
+        <attr name="underlineHeight" format="reference|dimension"/>
+        <attr name="background" format="reference"/>
+        <attr name="mode" format="integer">
+            <enum name="fixed" value="1" />
+            <enum name="scroll" value="0" />
+        </attr>
+        <attr name="indicatorMode" format="integer">
+            <enum name="match_parent" value="-1"/>
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="indicatorHeight" format="dimension"/>
+        <attr name="textStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TagListView">
+        <attr name="tagTextSize" format="reference|dimension"/>
+        <attr name="tagTextColor" format="reference|color"/>
+        <attr name="tagBackground" format="reference"/>
+        <attr name="tagPaddingLeft" format="reference|dimension"/>
+        <attr name="tagPaddingTop" format="reference|dimension"/>
+        <attr name="tagPaddingRight" format="reference|dimension"/>
+        <attr name="tagPaddingBottom" format="reference|dimension"/>
+        <attr name="lineSpacing" format="reference|dimension"/>
+        <attr name="tagSpacing" format="reference|dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="InviteShareButton">
+        <attr name="isbTitle" format="reference|string"/>
+        <attr name="isbIcon" format="reference"/>
+        <attr name="isbIconSelected" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ClickableCheckBox">
+        <attr name="ccbNotAllowedBackground" format="reference" />
+        <attr name="allowedBackground" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference"/>
+        <attr name="mvAnimDuration" format="integer|reference"/>
+        <attr name="mvTextSize" format="dimension|reference"/>
+        <attr name="mvTextColor" format="color|reference"/>
+        <attr name="mvSingleLine" format="boolean"/>
+        <attr name="mvGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

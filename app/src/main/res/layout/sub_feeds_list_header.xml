@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    android:orientation="vertical">
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/banner_feeds_list"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        app:canLoop="true" />
+
+    <!--workaround some weird bug in LinearLayoutManager -->
+    <!--when the banner is Visibility.GONE, it can't canScrollVertically-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal" />
+
+
+    <!--the relative layout wrapper is to workaround a problem-->
+    <!--that when the banner is gone, the whole header does not match_parent horizontally-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_cashloan_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:overScrollMode="never"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

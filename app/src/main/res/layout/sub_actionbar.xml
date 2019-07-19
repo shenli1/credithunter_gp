@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ActionBarDefault"
+    android:fillViewport="false"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/ib_actionbar_back"
+        style="@style/ActionBarImageButton"
+        android:clickable="false"
+        android:focusable="false"
+        android:src="@drawable/back_icon" />
+
+    <TextView
+        android:id="@+id/tv_actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_toRightOf="@id/ib_actionbar_back"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWrap.Vertical"
+    android:background="@color/white_bg"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <!--left: content, right: icon-->
+    <RelativeLayout
+        style="@style/MatchWrap"
+        android:paddingBottom="14dp"
+        android:paddingLeft="@dimen/horizontal_padding"
+        android:paddingRight="@dimen/horizontal_padding"
+        android:paddingTop="14dp">
+        <!--right: image-->
+        <ImageView
+            android:id="@+id/iv_icon_feeds"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_feeds_placeholder" />
+
+        <!--left: title-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_icon_feeds"
+            android:orientation="vertical">
+
+            <!--top: title-->
+            <TextView
+                android:id="@+id/tv_title_feeds"
+                style="@style/WrapWrap"
+                android:ellipsize="end"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="2"
+                android:paddingRight="8dp"
+                android:textColor="@color/dark_text1"
+                android:textSize="15sp" />
+
+            <!--bottom: like, viewed-->
+            <LinearLayout
+                style="@style/MatchMatch.Horizontal"
+                android:gravity="bottom">
+                <!--type: news, tips-->
+                <TextView
+                    android:id="@+id/tv_type_feeds"
+                    android:layout_width="89dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/feeds_cell_intro_text"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_feeds_look" />
+
+                    <TextView
+                        android:id="@+id/tv_look_feeds"
+                        style="@style/WrapWrap"
+                        android:layout_marginLeft="6dp"
+                        android:drawablePadding="3dp"
+                        android:gravity="center"
+                        android:textColor="@color/feeds_cell_intro_text"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/ic_feeds_like" />
+
+                    <TextView
+                        android:id="@+id/tv_like_feeds"
+                        style="@style/WrapWrap"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center"
+                        android:textColor="@color/feeds_cell_intro_text"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"
+        android:layout_marginLeft="@dimen/horizontal_padding"
+        android:layout_marginRight="@dimen/horizontal_padding"
+        />
+</LinearLayout>

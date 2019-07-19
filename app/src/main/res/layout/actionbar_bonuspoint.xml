@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionbar_bonuspoint"
+    style="@style/ActionBarDefault"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/ib_actionbar_bonuspoint_user"
+        style="@style/ActionBarImageButton"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingRight="10dp"
+        android:src="@drawable/ic_avatar_actionbar" />
+
+    <TextView
+        android:id="@+id/tv_actionbar_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:text="@string/bonuspoint_title"
+        android:gravity="center"
+        />
+
+    <ImageButton
+        android:id="@+id/ib_actionbar_bonuspoint_qa"
+        style="@style/ActionBarImageButton"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_actionbar_bonuspoint_qa" />
+</LinearLayout>
